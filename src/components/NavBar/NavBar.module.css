@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
+
+.header {
+  padding: 20px 50px 23px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 2rem; */
+  color: #fff;
+  border: solid 1px #000000;
+  border-radius: 36px;
+  column-gap: 27px;
+  padding: 0px 30px;
+}
+
+.logo {
+  margin: 8px 0px;
+  align-items: center;
+}
+.logo img {
+  width: 86px;
+}
+/* burger-menu-------------------------------------------------------------------- */
+.burger_menu {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burger_menu:before,
+.burger_menu:after {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.burger_span {
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 9px;
+}
+.burger_menu:before {
+  top: 0;
+}
+.burger_menu:after {
+  bottom: 0;
+}
+/* menu---------------------------------------------------------------------------- */
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  font-family: "Average Sans";
+  font-size: 24px;
+  line-height: 70%;
+}
+
+.navItem {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  height: 68px;
+}
+
+.navLinks {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navLinks:hover {
+  color: #ddd;
+}
+/* ------dropdown_sublist */
+
+.dropdown_sublist {
+  position: absolute;
+  padding: 25px 0px;
+  z-index: 2;
+  left: 0;
+  background-color: #fff;
+  top: 134px;
+  min-width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 17px 20px 0 rgba(0, 0, 0, 0.17);
+  transition: all 0.2s ease-in-out;
+  border-radius: 36px;
+  cursor: default;
+}
+
+.dropdown_sublist__menu {
+  display: flex;
+  background-color: #fff;
+  left: 0;
+  padding: 0px 45px;
+}
+.dropdown_sublist__row {
+  margin-top: 25px;
+  margin-right: 80px;
+}
+.dropdown_sublist__title {
+  position: relative;
+  text-decoration: none;
+  font-family: "Average Sans";
+  font-size: 25px;
+  line-height: 76%;
+  color: #acacac;
+  cursor: pointer;
+}
+.dropdown_sublist__title:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  content: "";
+  transition: 0.3s ease-out;
+}
+.dropdown_sublist__title:hover:after,
+.dropdown_sublist__title:focus:after {
+  width: 100%;
+}
+.dropdown_sublist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.dropdown_sublist__link {
+  position: relative;
+  text-decoration: none;
+  font-family: "Average Sans";
+  font-size: 25px;
+  line-height: 76%;
+  color: #000000;
+  cursor: pointer;
+}
+.dropdown_sublist__link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  content: "";
+  transition: 0.3s ease-out;
+}
+.dropdown_sublist__link:hover:after,
+.dropdown_sublist__link:focus:after {
+  width: 100%;
+}
+.navItem:hover .dropdown_sublist {
+  visibility: visible;
+  opacity: 1;
+  top: 112px;
+}
+/* ------------search_liked_mail------------------------------------------------------ */
+
+.search_liked_mail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search_liked_mail_icon {
+  width: 35px;
+  fill: black;
+  transition: all 0.3s ease;
+}
+.search_liked_mail_icon:hover {
+  width: 35px;
+  fill: gray;
+}
+/* search-box---------------------------------------------------------------------- */
+
+.search_box {
+  display: flex;
+  border: solid 1px #000000;
+  border-radius: 36px;
+  padding: 10px 29px 10px 17px;
+}
+.search_box img {
+  max-height: 44px;
+}
+
+.search_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.search_txt {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  color: #fff;
+  font-family: "Average Sans";
+  color: rgb(94, 86, 86);
+  font-size: 16px;
+  line-height: 76%;
+  margin-left: 5px;
+  transition: 0.4s;
+  width: 45px;
+}
+
+.search_box:hover .search_txt {
+  width: 9rem;
+  flex-shrink: 2;
+}
+@media screen and (max-width: 1400px) {
+  .navMenu {
+    display: none;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    /* zoom: 0.4; */
+  }
+}

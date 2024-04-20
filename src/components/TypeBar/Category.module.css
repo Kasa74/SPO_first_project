@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+.typebar_content {
+  display: flex;
+  justify-content: space-between;
+}
+.typebar_content h3 {
+  font-family: "Lilita One";
+  font-size: 2.6vw;
+  font-weight: 400;
+  line-height: 2.2vw;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.typebar_categories {
+  margin-top: 21px;
+
+  min-width: 0;
+  width: 276px;
+  margin-right: 25px;
+}
+/* .typebar_categories ul {
+  display: none;
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.typebar_categories li {
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  border-radius: 36px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  font-family: "Lilita One";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 6px 30px;
+} */
+.active {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Average Sans";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 36px;
+  padding: 5px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 272px;
+  margin-left: 4px;
+}
+.active:hover {
+  color: #fff;
+  background-color: #000000;
+}
+.non_active {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Average Sans";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  border-radius: 36px;
+  padding: 5px 0px;
+  cursor: pointer;
+  width: 272px;
+  margin-left: 4px;
+  transition: all 0.3s ease;
+}
+.non_active:hover {
+  color: #fff;
+  background-color: #000000;
+}
+/* .typebar_categories li:not(:last-child) {
+  margin-right: 10px;
+}
+.typebar_category:hover {
+  color: #fff;
+  background-color: #000000;
+} */
