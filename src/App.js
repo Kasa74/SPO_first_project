@@ -1,5 +1,5 @@
 // import React, { useContext, useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import "./style.css";
 import { observer } from "mobx-react-lite";
 import NavBar from "./components/NavBar/NavBar";
@@ -11,7 +11,7 @@ import Registration from "./pages/Registration/Registration";
 
 const App = observer(() => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
 
       <Routes>
@@ -21,7 +21,7 @@ const App = observer(() => {
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/registration" element={<Registration />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 });
 
